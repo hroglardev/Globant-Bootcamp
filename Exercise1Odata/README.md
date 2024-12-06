@@ -31,6 +31,11 @@ Use your favourite endpoint tester: Postman, ThunderClient, etc and paste the ba
 
 Use the different extensions to query the appropiate collection and use query parameters to apply filtering, sorting or others to your preference.
 
+If you are using postman feel free to use my collection to test the individual queries. Copy the following url and import the collection in your workspace.
+
+https://api.postman.com/collections/38352656-8d045b26-6a60-43f2-b801-57237fb05cfe?access_key=PMAT-01JEE7MQTXSSPJA1WNW4D2549G
+
+The collection defaults the queries to json format so make sure you update or delete the <b>$format</b> parameter if you want a different one.
 
 </div>
 
