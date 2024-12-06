@@ -27,7 +27,7 @@ GET {{api_base_url}}/Products?$filter=UnitsInStock eq 0&$select=ProductID, Produ
 
 
 # Get the 5 most expensive products
-GET {{api_base_url}}/Products?$orderby=UnitPrice desc&$top=5
+GET {{api_base_url}}/Products?$orderby=UnitPrice desc&$top=5&$format=json
 
 
 # Find the orders that were shipped to "Germany"
