@@ -33,7 +33,7 @@ Use the different extensions to query the appropiate collection and use query pa
 
 If you are using postman, feel free to copy my collection with set up queries. In your postman click import and paste the following link:
 
-https://api.postman.com/collections/38352656-8d045b26-6a60-43f2-b801-57237fb05cfe?access_key=PMAT-01JEE7MQTXSSPJA1WNW4D2549G
+<a href="https://api.postman.com/collections/38352656-8d045b26-6a60-43f2-b801-57237fb05cfe?access_key=PMAT-01JEE7MQTXSSPJA1WNW4D2549G" target="_blank">Postman Collection</a> 
 
 The queries are set up by default to json format. Make sure you remove the formate parameter or change it should you wish another format.
 
@@ -59,5 +59,5 @@ The queries are set up by default to json format. Make sure you remove the forma
 For more parameters please refer to the ODATA documentation here
 
 
-<a href="https://www.odata.org/documentation/">Odata Documentation</a>
+<a href="https://www.odata.org/documentation/" target="_blank">Odata Documentation</a>
 
