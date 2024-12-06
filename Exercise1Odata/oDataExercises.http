@@ -1,0 +1,44 @@
+
+# Variable containing the Northwind base URL
+@api_base_url = https://services.odata.org/northwind/northwind.svc
+
+
+GET {{api_base_url}}
+
+
+# Metadata
+GET {{api_base_url}}/$metadata
+
+
+# Get orders with customer details
+GET {{api_base_url}}/Customers?$expand=Orders&$format=json
+
+
+# Get the employees who report to manager "2"
+GET {{api_base_url}}/Employees?$filter=ReportsTo eq 2&$format=json
+
+
+# Get the products that are in stock (inventory)
+GET {{api_base_url}}/Products?$filter=UnitsInStock gt 0&$format=json
+
+
+# Get only the names and codes of products that are NOT in stock (inventory)
+GET {{api_base_url}}/Products?$filter=UnitsInStock eq 0&$select=ProductID, ProductName&$format=json
+
+
+# Get the 5 most expensive products
+GET {{api_base_url}}/Products?$orderby=UnitPrice desc&$top=5
+
+
+# Find the orders that were shipped to "Germany"
+GET {{api_base_url}}/Orders?$filter=ShipCountry eq 'Germany'&$format=json
+
+
+# Get only the names and prices of products in the category "Beverages"
+
+ # First find out what the category ID matches the "Beverages Category" => Results to 1
+  GET {{api_base_url}}/Categories?$filter=CategoryName eq 'Beverages'&$select=CategoryID
+ 
+ # With the category ID we can apply the ID to the next query
+  GET {{api_base_url}}/Products?$filter=CategoryID eq 1 &$select=ProductName, UnitPrice&$format=json
+ 
